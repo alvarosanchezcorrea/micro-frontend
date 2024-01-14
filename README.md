@@ -40,6 +40,10 @@ Configuración de Herramientas
 
 https://single-spa.js.org/
 
+https://single-spa.js.org/docs/devtools/ 
+
+
+
 Single-spa es el framework que utilizaremos para construir Micro Frontends. Instalémoslo globalmente y exploremos su estructura básica.
 
 
