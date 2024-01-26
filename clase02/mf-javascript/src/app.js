@@ -14,10 +14,13 @@ window.appJavascript = {
     const contenedor = document.getElementById("app-javascript");
 
   
+    const texto = document.createElement("input");
     const boton = document.createElement("button");
-    boton.textContent = `Guardar ${props.nombre}`;
+    
+    boton.textContent = `${props.nombre}`;
 
    
+    contenedor.appendChild(texto);
     contenedor.appendChild(boton);
   },
 

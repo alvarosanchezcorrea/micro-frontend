@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOMClient from 'react-dom/client';
 import Root from './Root.jsx';
 import singleSpaReact, { SingleSpaContext } from 'single-spa-react';
-//import { registerApplication, start } from "single-spa";
+
 
  window.reactApp = singleSpaReact({
   React,
