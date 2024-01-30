@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Root Config</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js"></script>
+
+ 
+  
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "react": "https://unpkg.com/react@18.2.0/umd/react.production.min.js",
+        "react-dom": "https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js",
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@6.0.0/lib/es5/system/single-spa.min.js",
+        "app-mf-javascript": "//localhost:9001/main.js",
+        "app-mf-react": "//localhost:9002/main.js",
+        "root-config": "//localhost:9000/main.js"
+      }
+    }
+  </script>
+  
+</head>
+
+  </head>
+  <body>
+
+    <!-- Contenedor para las aplicaciones -->
+    <div style="background-color: beige; height: 200px">
+      <!-- Div para la aplicación React -->
+      <div id="single-spa-application:reactApp"></div>
+
+      <!-- Div para la aplicación JavaScript -->
+      <div id="app-javascript"></div>
+    </div>
+
+    <!-- Iniciar carga de la aplicación root-config -->
+    <script>
+      System.import("root-config");
+    </script>
+  </body>
+</html>
